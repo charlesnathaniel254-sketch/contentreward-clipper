@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Generated media (large — do not commit)
+outputs/
+downloads/
+*.mp4
+*.ass
+!README.md

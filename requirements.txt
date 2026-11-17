@@ -1,0 +1,21 @@
+# ContentReward Clipper — Python dependencies
+# Install with:  pip install -r requirements.txt
+#
+# System dependency (NOT installable via pip): FFmpeg must be on your PATH.
+#   macOS:   brew install ffmpeg
+#   Ubuntu:  sudo apt install ffmpeg
+#   Windows: https://ffmpeg.org/download.html
+
+# Web backend + server
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+python-multipart>=0.0.9
+
+# Video downloading (YouTube + other supported sites)
+yt-dlp>=2024.8.6
+
+# Speech-to-text with word-level timestamps.
+# NOTE: openai-whisper pulls in PyTorch (large, ~2 GB). The first run also
+# downloads the selected Whisper model (~75 MB for `tiny`, ~145 MB for `base`).
+openai-whisper>=20231117
